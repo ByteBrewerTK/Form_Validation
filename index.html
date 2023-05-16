@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <header>Signup</header>
+        
+        <form action="https://abutalif-portfolio-personal.netlify.app/">
+            
+            <div class="email-box input-part">
+                <div class="email-input input-box">
+                    <input type="email" placeholder="Enter your email" class="email">
+                </div>
+                <span class="error email-error">
+                    <i class="bx bx-error-circle"></i>
+                    <p class="error-text">Please enter valid email</p>
+                </span>
+            </div>
+    
+            <div class="create-box input-part">
+                <div class="create-input input-box">
+                    <input type="password" placeholder="Create password" class="password">
+                    <i class="bx bx-hide show-hide"></i>
+                </div>
+                <span class="error create-error">
+                    <i class="bx bx-error-circle"></i>
+                    <p class="error-text">Please enter atleast 8 character with number, symbol, capital and small letter.</p>
+                </span>
+            </div>
+            
+            <div class="confirm-box input-part" >
+                <div class="confirm-input input-box">
+                    <input type="password" placeholder="Confirm password" class="cPassword">
+                    <i class="bx bx-hide show-hide"></i>
+    
+                </div>
+                <span class="error confirm-error">
+                    <i class="bx bx-error-circle"></i>
+                    <p class="error-text">Password don't match</p>
+                </span>
+            </div>
+    
+            <input type="submit" value="Signup Now" class="submit">
+
+        </form>
+    </div>
+</body>
+</html>
